@@ -158,8 +158,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://api-bimat188.fast4g.me/"
-      ApiKey: "adminhoang9810a@fast4g.net"
+      ApiHost: "https://api-khongaibiet.skypn.fun/"
+      ApiKey: "adminskypn9810@skypn.fun"
       NodeID: $node_80
       NodeType: V2ray 
       Timeout: 10 
@@ -219,9 +219,9 @@ systemctl enable docker
 curl -fsSL https://get.docker.com | bash -s docker
 curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
-  echo "khởi động Docker "
+  echo "Khởi động Docker "
   service docker start
-  echo "khởi động Docker-Compose "
+  echo "Khởi động Docker-Compose "
   docker-compose up -d
   echo
   echo -e "Đã hoàn tất cài đặt phụ trợ ！"
