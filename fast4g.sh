@@ -139,7 +139,7 @@ Nodes:
       ApiHost: "https://api-bimat188.fast4g.me/"
       ApiKey: "adminhoang9810a@fast4g.net"
       NodeID: $NodeID443
-      NodeType: V2ray 
+      NodeType: Trojan 
       Timeout: 30 
       EnableVless: false 
       EnableXTLS: false 
