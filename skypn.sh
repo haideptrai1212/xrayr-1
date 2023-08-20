@@ -135,7 +135,7 @@ Nodes:
       ApiHost: "https://api-khongaibiet.skypn.fun/"
       ApiKey: "adminskypn9810@skypn.fun"
       NodeID: $NodeID443
-      NodeType: V2ray 
+      NodeType: Trojan 
       Timeout: 30 
       EnableVless: false 
       EnableXTLS: false 
