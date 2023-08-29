@@ -67,7 +67,7 @@ makeConfig() {
   echo -e "CertDomain là: ${CertDomain80}"
   echo "---------------"
 	read -p "Node ID 443: " NodeID443
-	echo -e "Node 80 là: ${NodeID443}"
+	echo -e "Node 443 là: ${NodeID443}"
 	echo "---------------"
   read -p "Nhập CertDomain port 443: " CertDomain443
   echo -e "CertDomain là: ${CertDomain443}"
