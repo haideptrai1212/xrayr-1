@@ -113,8 +113,15 @@ config_after_install() {
 }
 
 install_x-ui() {
+    sudo ufw allow 80/tcp
+    sudo ufw allow 443/tcp
+    sudo ufw allow 80
+    sudo ufw allow 443
+    sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+    sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+    sudo sysctl -w net.ipv6.conf.lo.disable_ipv6=1
     cd /usr/local/
-
+    
     if [ $# == 0 ]; then
         last_version=$(curl -Ls "https://api.github.com/repos/alireza0/x-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
         if [[ ! -n "$last_version" ]]; then
