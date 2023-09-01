@@ -52,6 +52,13 @@ install_XrayR() {
 	[[ -z $(type -P curl) ]] && ${PACKAGE_UPDATE[int]} && ${PACKAGE_INSTALL[int]} curl
 	[[ -z $(type -P socat) ]] && ${PACKAGE_UPDATE[int]} && ${PACKAGE_INSTALL[int]} socat
 	bash <(curl -Ls https://raw.githubusercontent.com/longyi8/XrayR/master/install.sh)
+ 	sudo ufw allow 80/tcp
+	sudo ufw allow 443/tcp
+	sudo ufw allow 80
+	sudo ufw allow 443
+	sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+	sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+	sudo sysctl -w net.ipv6.conf.lo.disable_ipv6=1
 }
 
 makeConfig() {
