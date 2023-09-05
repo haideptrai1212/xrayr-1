@@ -101,8 +101,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://api-khongaibiet.skypn.fun/"
-      ApiKey: "adminskypn9810@skypn.fun"
+      ApiHost: "https://api-khongaibiet.skypn.me/"
+      ApiKey: "adminskypn9810@skypn.me"
       NodeID: $NodeID80
       NodeType: V2ray 
       Timeout: 30 
@@ -139,8 +139,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://api-khongaibiet.skypn.fun/"
-      ApiKey: "adminskypn9810@skypn.fun"
+      ApiHost: "https://api-khongaibiet.skypn.me/"
+      ApiKey: "adminskypn9810@skypn.me"
       NodeID: $NodeID443
       NodeType: Trojan 
       Timeout: 30 
