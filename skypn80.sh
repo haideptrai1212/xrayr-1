@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+ #!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
@@ -158,8 +158,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://api-khongaibiet.skypn.fun/"
-      ApiKey: "adminskypn9810@skypn.fun"
+      ApiHost: "https://api-khongaibiet.skypn.me/"
+      ApiKey: "adminskypn9810@skypn.me"
       NodeID: $node_80
       NodeType: V2ray 
       Timeout: 10 
