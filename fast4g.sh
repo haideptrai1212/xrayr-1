@@ -101,7 +101,7 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://api-bimat188.fast4g.me/"
+      ApiHost: "https://api-bimat188.fast4g.vn/"
       ApiKey: "adminhoang9810a@fast4g.net"
       NodeID: $NodeID80
       NodeType: V2ray 
@@ -139,7 +139,7 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://api-bimat188.fast4g.me/"
+      ApiHost: "https://api-bimat188.fast4g.vn/"
       ApiKey: "adminhoang9810a@fast4g.net"
       NodeID: $NodeID443
       NodeType: Trojan 
