@@ -62,7 +62,7 @@ install_XrayR() {
 }
 
 makeConfig() {
-    echo "------  FAST4G.ME ---------"
+    echo "------  FAST4G.VN ---------"
 	read -p "Node ID 80: " NodeID80
 	echo -e "Node 80 là: ${NodeID80}"
 	echo "---------------"
