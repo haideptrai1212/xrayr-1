@@ -62,7 +62,7 @@ install_XrayR() {
 }
 
 makeConfig() {
-    echo "------  FAST4G.VN ---------"
+    echo "------  XRAYR THƯỜNG BY FAST4G ---------"
 	read -p "Node ID 80: " NodeID80
 	echo -e "Node 80 là: ${NodeID80}"
 	echo "---------------"
@@ -101,8 +101,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://4gvie.click"
-      ApiKey: "admin4gviesieure1605"
+      ApiHost: "https://4gvietsieure.xyz"
+      ApiKey: "admin@4gvietsieure.xyz"
       NodeID: $NodeID80
       NodeType: V2ray 
       Timeout: 30 
@@ -139,8 +139,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://4gvie.click"
-      ApiKey: "admin4gviesieure1605"
+      ApiHost: "https://4gvietsieure.xyz"
+      ApiKey: "admin@4gvietsieure.xyz"
       NodeID: $NodeID443
       NodeType: Trojan 
       Timeout: 30 
