@@ -62,18 +62,10 @@ install_XrayR() {
 }
 
 makeConfig() {
-    echo "------  FAST4G.VN ---------"
+    echo "------  4GMAXDATA ---------"
 	read -p "Node ID 80: " NodeID80
-	echo -e "Node 80 là: ${NodeID80}"
-	echo "---------------"
-	read -p "Nhập CertDomain port 80: " CertDomain80
-  echo -e "CertDomain là: ${CertDomain80}"
-  echo "---------------"
+  	echo "---------------"
 	read -p "Node ID 443: " NodeID443
-	echo -e "Node 443 là: ${NodeID443}"
-	echo "---------------"
-  read -p "Nhập CertDomain port 443: " CertDomain443
-  echo -e "CertDomain là: ${CertDomain443}"
 	echo "---------------"
 
 	rm -f /etc/XrayR/config.yml
@@ -101,8 +93,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://api-bimat188.fast4g.vn/"
-      ApiKey: "adminhoang9810a@fast4g.net"
+      ApiHost: "https://4gmaxdata.net/"
+      ApiKey: "admin.nam@4gmaxdata.net"
       NodeID: $NodeID80
       NodeType: V2ray 
       Timeout: 30 
@@ -128,7 +120,7 @@ Nodes:
           ProxyProtocolVer: 0 
       CertConfig:
         CertMode: http
-        CertDomain: "$CertDomain80" 
+        CertDomain: "hn" 
         CertFile: /etc/XrayR/cert-net/fast4g.crt
         KeyFile: /etc/XrayR/cert-net/fast4g.key
         Provider: alidns 
@@ -139,8 +131,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://api-bimat188.fast4g.vn/"
-      ApiKey: "adminhoang9810a@fast4g.net"
+      ApiHost: "https://4gmaxdata.net/"
+      ApiKey: "admin.nam@4gmaxdata.net"
       NodeID: $NodeID443
       NodeType: Trojan 
       Timeout: 30 
@@ -166,9 +158,9 @@ Nodes:
           ProxyProtocolVer: 0 
       CertConfig:
         CertMode: file 
-        CertDomain: "$CertDomain443"
-        CertFile: /etc/XrayR/cert-net/fast4g.crt 
-        KeyFile: /etc/XrayR/cert-net/fast4g.key
+        CertDomain: "hn"
+        CertFile: /etc/XrayR/ssl-4gmaxdata/crt.crt
+        KeyFile: /etc/XrayR/ssl-4gmaxdata/key.key
         Provider: cloudflare 
         Email: test@me.com
         DNSEnv: 
@@ -177,7 +169,7 @@ Nodes:
 
 EOF
 	cd /etc/XrayR
-	git clone https://github.com/fast4gvpn/cert-net.git
+	git clone https://github.com/fast4gvpn/ssl-4gmaxdata.git
 	XrayR restart
 	green "Đã xong, reboot nếu k thành công！"
 	exit 1
