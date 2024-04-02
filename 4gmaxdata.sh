@@ -93,8 +93,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://4gmaxdata.net/"
-      ApiKey: "admin.nam@4gmaxdata.net"
+      ApiHost: "https://punpn.net/"
+      ApiKey: "hhai_hhai_hhai_hhaihhai"
       NodeID: $NodeID80
       NodeType: V2ray 
       Timeout: 30 
@@ -131,8 +131,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://4gmaxdata.net/"
-      ApiKey: "admin.nam@4gmaxdata.net"
+      ApiHost: "https://punpn.net/"
+      ApiKey: "hhai_hhai_hhai_hhaihhai"
       NodeID: $NodeID443
       NodeType: Trojan 
       Timeout: 30 
